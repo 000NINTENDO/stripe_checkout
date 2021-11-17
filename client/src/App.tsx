@@ -5,10 +5,8 @@ import images from "./utils/imgages";
 function App() {
   return (
     <div className="App">
-      <h2 className="text-4xl">App</h2>
-
       <div className="md:container mx-auto">
-        <div className="card-container overflow-hidden flex w-max border border-black-100 border-opacity-100 rounded-xl ml-10 text-left shadow-lg">
+        <div className="card-container overflow-hidden flex w-max border border-black-100 border-opacity-100 rounded-xl ml-10 mt-10 text-left shadow-xl">
           <div className="product-image">
             <img
               src={images[1].src}
