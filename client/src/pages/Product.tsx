@@ -102,6 +102,40 @@ const Product = () => {
           </div>
         </div>
       </div>
+      @types/react-snapshot{" "}
+      <div className="modal-outer-container flex w-full mt-10 justify-center mb-10">
+        <div className="modal-container flex justify-center w-1/3 flex-col container h-auto p-16 bg-yellow-300 border-gray-600 border-opacity-25 border rounded-2xl ">
+          <h2 className="font-semibold text-xl mb-2 uppercase text-gray-900">
+            New Year's Sale
+          </h2>
+          <h1 className="modal-title font-bold text-gray-900 text-3xl uppercase mb-2">
+            Upto to 69% Off
+          </h1>
+          <p className="prize-line text-gray-900">Get online from $2.90/mo</p>
+          <div className="timer-container mt-10 mb-6">
+            <p className="font-medium mb-3 text-gray-900">Offer ends in:</p>
+            <div className="timer-blocks flex justify-center ">
+              <div className="timer-block px-3 py-2 border rounded-md bg-white bg-opacity-20 m-1">
+                <p className="time font-bold text-2xl text-white">00</p>
+              </div>
+              <div className="timer-block px-3 py-2 border rounded-md bg-white bg-opacity-20 m-1">
+                <p className="time font-bold text-2xl text-white">00</p>
+              </div>
+              <div className="timer-block px-3 py-2 border rounded-md bg-white bg-opacity-20 m-1">
+                <p className="time font-bold text-2xl text-white">00</p>
+              </div>
+              <div className="timer-block px-3 py-2 border rounded-md bg-white bg-opacity-20 m-1">
+                <p className="time font-bold text-2xl text-white">00</p>
+              </div>
+            </div>
+          </div>
+          <div className="button-container w-full flex justify-center">
+            <button className="offer-button min-w-0 uppercase flex justify-center py-3 px-8 rounded-full bg-red-500 text-white font-semibold">
+              Get the offer
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
