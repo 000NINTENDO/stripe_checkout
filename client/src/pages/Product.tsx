@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import images from "../utils/imgages";
+import { Helmet } from "react-helmet";
 
 const Product = () => {
   const history = useHistory();
@@ -28,6 +29,17 @@ const Product = () => {
 
   return (
     <div className="App">
+      <Helmet>
+        <meta title="og:title" content="Product page" />
+        <meta
+          title="og:description"
+          content="This is description for this beautiful product"
+        />
+        <meta
+          title="og:image"
+          content="https://tailwindcss.com/_next/static/media/classic…ility-jacket.0f108046e151c8576017eaf383406fe6.jpg"
+        />
+      </Helmet>
       <div className="md:container mx-auto">
         <div className="card-container overflow-hidden flex w-max border border-black-100 border-opacity-100 rounded-xl ml-10 mt-10 text-left shadow-xl">
           <div className="product-image">
@@ -102,7 +114,6 @@ const Product = () => {
           </div>
         </div>
       </div>
-      @types/react-snapshot{" "}
       <div className="modal-outer-container flex w-full mt-10 justify-center mb-10">
         <div className="modal-container flex justify-center w-1/3 flex-col container h-auto p-16 bg-yellow-300 border-gray-600 border-opacity-25 border rounded-2xl ">
           <h2 className="font-semibold text-xl mb-2 uppercase text-gray-900">
